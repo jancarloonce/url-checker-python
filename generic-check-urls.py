@@ -8,17 +8,11 @@
 
 import time
 import requests
+import csv
 
-URLS = [
-    'http://www.appdynamics.com'
-    ,'http://www.google.com'
-    ,'http://google.com'
-    ,'http://www.twitter.com'
-    ,'http://www.google.com/asdfasdfasdf'
-    ,'http://www.cnn.com'
-    ,'http://www.NotARealDomainJustMadeItUpFoobar.co'
-]
-
+with open('file.csv', 'r') as f:
+  reader = csv.reader(f)
+  URLS = list(reader)
 
 
 ###############################################################################
